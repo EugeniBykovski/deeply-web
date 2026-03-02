@@ -1,3 +1,85 @@
 {
-  "title.landing": "Deeply - приложение для задержки дыхания"
+  "title.landing": "Deeply - приложение для задержки дыхания",
+  "nav": {
+    "product": "Продукт",
+    "features": "Возможности",
+    "pricing": "Цены",
+    "contacts": "Контакты"
+  },
+  "hero": {
+    "title": "Deeply — дыши, ныряй, прогрессируй",
+    "subtitle": "Современные тренировки по фридайвингу — шаг за шагом."
+  },
+  "product": {
+    "title": "Продукт",
+    "subtitle": "Что вы получаете в приложении."
+  },
+  "features": {
+    "title": "Возможности",
+    "subtitle": "Всё, что нужно для тренировок."
+  },
+  "pricing": {
+    "title": "Цены",
+    "subtitle": "Бесплатные погружения + платные позже."
+  },
+  "contacts": {
+    "title": "Контакты",
+    "subtitle": "Напишите нам."
+  },
+  "footer": {
+    "copyrightLine": "© 2026 Deeply. Все права защищены.",
+    "columns": {
+      "product": {
+        "title": "Продукт",
+        "dives": "Погружения",
+        "integrations": "Интеграции",
+        "features": "Возможности",
+        "templates": "Шаблоны тренировок",
+        "compare": "Сравнение",
+        "security": "Безопасность"
+      },
+      "solutions": {
+        "title": "Решения",
+        "beginners": "Новичкам",
+        "advanced": "Продвинутым",
+        "coaches": "Тренерам",
+        "teams": "Командам",
+        "b2b": "B2B / клубам",
+        "partners": "Партнёрам"
+      },
+      "company": {
+        "title": "Компания",
+        "about": "О нас",
+        "careers": "Карьера",
+        "partnerships": "Партнёрства",
+        "contacts": "Контакты"
+      },
+      "resources": {
+        "title": "Ресурсы",
+        "blog": "Блог",
+        "guides": "Гайды",
+        "gettingStarted": "Как начать",
+        "examples": "Примеры тренировок",
+        "faq": "FAQ"
+      },
+      "getInTouch": {
+        "title": "Связаться",
+        "support": "Написать в поддержку",
+        "helpCenter": "Центр помощи",
+        "forPartners": "Для партнёров"
+      }
+    },
+    "legal": {
+      "security": "Безопасность",
+      "privacy": "Конфиденциальность",
+      "terms": "Условия",
+      "cookies": "Cookies",
+      "accessibility": "Доступность"
+    },
+    "socials": {
+      "threads": "Threads",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  }
 }

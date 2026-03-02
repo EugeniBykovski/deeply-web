@@ -41,7 +41,7 @@ export const LanguageSwitcher: FC = () => {
           className={cn(
             "px-3 py-1 rounded-full text-sm font-medium transition cursor-pointer",
             current === code
-              ? "bg-[#fcffa8] text-zinc-900 shadow-md"
+              ? "bg-(--main-color) text-zinc-200 shadow-md"
               : "text-white/70 hover:text-white hover:bg-zinc-700/30",
           )}
           aria-pressed={current === code}

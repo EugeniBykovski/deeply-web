@@ -1,3 +1,79 @@
 {
-  "title.landing": "Deeply - application for breath-holding"
+  "title.landing": "Deeply - application for breath-holding",
+  "nav": {
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Deeply — breathe, dive, progress",
+    "subtitle": "Modern freediving training in steps."
+  },
+  "product": { "title": "Product", "subtitle": "What you get in the app." },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need for training."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Free dives + paid dives later."
+  },
+  "contacts": { "title": "Contacts", "subtitle": "Write to us." },
+  "footer": {
+    "copyrightLine": "© 2026 Deeply. All rights reserved.",
+    "columns": {
+      "product": {
+        "title": "Product",
+        "dives": "Dives",
+        "integrations": "Integrations",
+        "features": "Features",
+        "templates": "Training templates",
+        "compare": "Compare",
+        "security": "Security"
+      },
+      "solutions": {
+        "title": "Solutions",
+        "beginners": "For beginners",
+        "advanced": "For advanced",
+        "coaches": "For coaches",
+        "teams": "For teams",
+        "b2b": "B2B / clubs",
+        "partners": "Partners"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About",
+        "careers": "Careers",
+        "partnerships": "Partnerships",
+        "contacts": "Contacts"
+      },
+      "resources": {
+        "title": "Resources",
+        "blog": "Blog",
+        "guides": "Guides",
+        "gettingStarted": "Getting started",
+        "examples": "Training examples",
+        "faq": "FAQ"
+      },
+      "getInTouch": {
+        "title": "Get in touch",
+        "support": "Contact support",
+        "helpCenter": "Help center",
+        "forPartners": "For partners"
+      }
+    },
+    "legal": {
+      "security": "Security",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "cookies": "Cookies",
+      "accessibility": "Accessibility"
+    },
+    "socials": {
+      "threads": "Threads",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
+  }
 }
