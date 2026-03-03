@@ -3,7 +3,7 @@
 import { Separator } from "../separator";
 import { LandingSection } from "./section";
 
-export function ProductSection({ t }: { t: (k: string) => string }) {
+export const ProductSection = ({ t }: { t: (k: string) => string }) => {
   return (
     <LandingSection id="product">
       <div className="rounded-4xl border border-white/5 bg-[#173A35]/25 p-8 backdrop-blur-xs">
@@ -50,4 +50,4 @@ export function ProductSection({ t }: { t: (k: string) => string }) {
       <Separator className="bg-(--main-color) my-12" />
     </LandingSection>
   );
-}
+};

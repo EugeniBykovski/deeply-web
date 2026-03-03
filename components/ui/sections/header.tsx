@@ -10,7 +10,7 @@ type Props = {
   labels: Record<LandingSectionId, string>;
 };
 
-export function LandingHeader({ rightSlot, labels }: Props) {
+export const LandingHeader = ({ rightSlot, labels }: Props) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -37,7 +37,10 @@ export function LandingHeader({ rightSlot, labels }: Props) {
         <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-zinc-600/5" />
 
         <div className="relative mx-auto flex h-18 items-center gap-4 px-6">
-          <a href="#top" className="flex items-center">
+          <a
+            href="#top"
+            className="flex items-center cursor-pointer p-2 bg-(--second-main-color)/20 rounded-full ring-1 ring-(--second-main-color)/50 transition-all hover:bg-(--main-color)/50"
+          >
             <div className="relative h-9 w-9">
               <Image
                 src="/img/sea.png"
@@ -72,4 +75,4 @@ export function LandingHeader({ rightSlot, labels }: Props) {
       </header>
     </div>
   );
-}
+};

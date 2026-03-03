@@ -62,7 +62,6 @@ export const LEGAL = [
   { labelKey: "footer.legal.security", href: "#" },
   { labelKey: "footer.legal.privacy", href: "#" },
   { labelKey: "footer.legal.terms", href: "#" },
-  { labelKey: "footer.legal.cookies", href: "#" },
   { labelKey: "footer.legal.accessibility", href: "#" },
 ] as const;
 
@@ -79,4 +78,17 @@ export const SOCIALS = [
     Icon: Music2,
     href: "#",
   },
+] as const;
+
+export const SEQUENCE = [
+  { depth: "-4.2", rate: "0.6", phaseKey: "hero.phone.phase.relax" },
+  { depth: "-6.8", rate: "0.8", phaseKey: "hero.phone.phase.descent" },
+  { depth: "-8.1", rate: "0.7", phaseKey: "hero.phone.phase.hold" },
+  { depth: "-7.4", rate: "0.5", phaseKey: "hero.phone.phase.ascent" },
+] as const;
+
+export const steps = [
+  "hero.phone.step1",
+  "hero.phone.step2",
+  "hero.phone.step3",
 ] as const;

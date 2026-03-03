@@ -6,7 +6,7 @@ type Props = {
   className?: string;
 };
 
-export function LandingSection({ id, children, className }: Props) {
+export const LandingSection = ({ id, children, className }: Props) => {
   return (
     <section
       id={id}
@@ -19,4 +19,4 @@ export function LandingSection({ id, children, className }: Props) {
       {children}
     </section>
   );
-}
+};

@@ -5,14 +5,14 @@ import { useClientTranslation } from "@/hooks/use-client-translation";
 import { Namespaces } from "@/lib/i18n";
 import { LandingBackground } from "./background";
 import { LandingHeader } from "./header";
-import { HeroSection } from "./hero";
 import { ProductSection } from "./product";
 import { FeaturesSection } from "./features";
 import { PricingSection } from "./pricing";
 import { ContactsSection } from "./contacts";
 import { Footer } from "./footer";
+import { HeroSection } from "./hero";
 
-export function LandingPage() {
+export const LandingPage = () => {
   const { t } = useClientTranslation(Namespaces.landing);
 
   return (
@@ -30,7 +30,7 @@ export function LandingPage() {
           contacts: t("nav.contacts"),
         }}
       />
-      <main className="relative pt-24 px-4 md:px-0">
+      <main className="relative pt-6 px-4 md:px-0">
         <HeroSection t={t} />
         <ProductSection t={t} />
         <FeaturesSection t={t} />
@@ -40,4 +40,4 @@ export function LandingPage() {
       <Footer t={t} />
     </div>
   );
-}
+};

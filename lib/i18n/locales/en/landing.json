@@ -7,8 +7,55 @@
     "contacts": "Contacts"
   },
   "hero": {
-    "title": "Deeply — breathe, dive, progress",
-    "subtitle": "Modern freediving training in steps."
+    "badge": "Freediving training · step-by-step",
+    "title": "Deeply - breathe, dive, progress",
+    "subtitle": "Modern freediving training in steps.",
+    "point1Title": "10 free dives",
+    "point1Text": "Start today, no credit card.",
+    "point2Title": "Safety-first",
+    "point2Text": "Clear steps + calm pacing.",
+    "ctaPrimary": "Explore product",
+    "ctaSecondary": "Watch demo",
+    "note": "Coming soon on iOS",
+    "storeAlt": "Download on the App Store",
+    "signal": {
+      "label": "Live insight",
+      "title": "Breath rhythm"
+    },
+    "kpi": {
+      "label": "Progress",
+      "title": "Your calm index",
+      "streak": "Streak",
+      "calm": "Calm"
+    },
+    "phone": {
+      "previewAlt": "Deeply app preview",
+      "mode": "Dive session",
+      "safe": "Safe mode",
+      "title": "Dive #01",
+      "subtitle": "Hold + descent steps",
+      "timerLabel": "Current hold",
+      "timerTotal": "/ 02:00",
+      "step1": "Breathe 4-6 calm cycles",
+      "step2": "Equalize check",
+      "step3": "Descent: slow & steady",
+      "depthTitle": "Depth",
+      "rateLabel": "Descent rate",
+      "rateUnit": "m/s",
+      "hint": "Hold to descend · Release to surface",
+      "phase": {
+        "relax": "Relax",
+        "descent": "Descent",
+        "hold": "Hold",
+        "ascent": "Ascent"
+      },
+      "nav": {
+        "home": "Home",
+        "dives": "Dives",
+        "progress": "Progress",
+        "profile": "Profile"
+      }
+    }
   },
   "product": { "title": "Product", "subtitle": "What you get in the app." },
   "features": {

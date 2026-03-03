@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef } from "react";
 
-export function LandingBackground() {
+export const LandingBackground = () => {
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   const cfg = useMemo(
@@ -98,7 +98,6 @@ export function LandingBackground() {
       el.style.setProperty("--px", `${curPX.toFixed(2)}%`);
       el.style.setProperty("--py", `${curPY.toFixed(2)}%`);
 
-      // глубина слоёв
       el.style.setProperty("--x0", `${(curTX * 0.1).toFixed(3)}px`);
       el.style.setProperty(
         "--y0",
@@ -298,4 +297,4 @@ export function LandingBackground() {
       </div>
     </div>
   );
-}
+};

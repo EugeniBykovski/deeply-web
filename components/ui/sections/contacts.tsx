@@ -2,7 +2,7 @@
 
 import { LandingSection } from "./section";
 
-export function ContactsSection({ t }: { t: (k: string) => string }) {
+export const ContactsSection = ({ t }: { t: (k: string) => string }) => {
   return (
     <LandingSection id="contacts">
       <div className="rounded-4xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
@@ -48,4 +48,4 @@ export function ContactsSection({ t }: { t: (k: string) => string }) {
       </div>
     </LandingSection>
   );
-}
+};

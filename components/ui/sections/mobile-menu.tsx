@@ -16,7 +16,7 @@ type Props = {
   labels: Record<LandingSectionId, string>;
 };
 
-export function MobileMenu({ labels }: Props) {
+export const MobileMenu = ({ labels }: Props) => {
   return (
     <div className="md:hidden">
       <Sheet>
@@ -73,4 +73,4 @@ export function MobileMenu({ labels }: Props) {
       </Sheet>
     </div>
   );
-}
+};
