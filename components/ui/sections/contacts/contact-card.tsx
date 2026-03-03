@@ -38,10 +38,6 @@ export const ContactCard = ({ t }: { t: TFn }) => {
             {t("contacts.card.cta")}
             <ArrowUpRight className="h-4 w-4" />
           </a>
-
-          <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white/70">
-            {EMAIL}
-          </div>
         </div>
 
         <div className="mt-4 text-xs text-white/50">

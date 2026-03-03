@@ -63,7 +63,7 @@ export const HeroLeft = ({ t }: Props) => {
           href="#"
           whileHover={{ y: -1 }}
           whileTap={{ scale: 0.98 }}
-          className="inline-flex items-center rounded-full bg-zinc-100 px-6 py-2 transition-all hover:bg-[#859c8f]"
+          className="inline-flex items-center rounded-full px-6 py-2 transition-all bg-emerald-200/90 hover:bg-emerald-200"
           aria-label={t("hero.storeAlt")}
         >
           <Image
