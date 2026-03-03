@@ -156,14 +156,179 @@
     }
   },
   "features": {
+    "badge": "Features",
     "title": "Features",
-    "subtitle": "Everything you need for training."
+    "subtitle": "Everything you need for training.",
+    "side": {
+      "kicker": "Built for real sessions",
+      "title": "Train with calm confidence",
+      "text": "Clear steps, gentle pacing, and meaningful signals — designed to keep you consistent."
+    },
+    "tags": {
+      "stepByStep": "Step-by-step",
+      "calmPace": "Calm pace",
+      "progress": "Progress"
+    },
+    "items": {
+      "programs": {
+        "title": "Programs & goals",
+        "text": "Choose a goal and follow a guided path.",
+        "b1": "Beginner-friendly programs with safe defaults",
+        "b2": "CO₂ / O₂ tables and recovery focus",
+        "b3": "Progressive difficulty without spikes"
+      },
+      "liveSession": {
+        "title": "Live session flow",
+        "text": "A clean screen that keeps you in the zone.",
+        "b1": "Breath → hold → recovery steps",
+        "b2": "Simple controls: hold / release",
+        "b3": "Minimal UI, maximum clarity"
+      },
+      "co2o2": {
+        "title": "CO₂ & O₂ training",
+        "text": "Build tolerance with structured intervals.",
+        "b1": "Time blocks and rest periods tuned for calm",
+        "b2": "Repeat sets with consistent pacing",
+        "b3": "Great for pool and dry practice"
+      },
+      "progress": {
+        "title": "Progress & insights",
+        "text": "Track what matters, ignore the noise.",
+        "b1": "Trends over time, streaks, personal bests",
+        "b2": "Session summaries and stability signals",
+        "b3": "Designed for long-term consistency"
+      },
+      "safety": {
+        "title": "Safety-first by design",
+        "text": "Reminders and limits that keep you grounded.",
+        "b1": "Dry-first mindset + safe pacing",
+        "b2": "No aggressive prompts or risky ramps",
+        "b3": "Clarity over intensity"
+      },
+      "personalization": {
+        "title": "Personalization",
+        "text": "Make it yours without complexity.",
+        "b1": "Choose level: beginner → advanced",
+        "b2": "Adjust session rhythm and focus",
+        "b3": "Save preferred modes"
+      }
+    },
+    "pillars": {
+      "kicker": "Principles",
+      "title": "Why it feels different",
+      "p1": {
+        "title": "Calm UI",
+        "text": "Low cognitive load so you can focus on your body."
+      },
+      "p2": {
+        "title": "Structure",
+        "text": "Guided steps that remove uncertainty during sessions."
+      },
+      "p3": {
+        "title": "Signals",
+        "text": "Insights that help you improve, not overwhelm."
+      }
+    },
+    "micro": {
+      "kicker": "Designed for 2026 UX",
+      "title": "Minimal, clear, consistent",
+      "text": "Deeply uses soft-glass blocks, readable typography, and predictable structure. You always know what to do next — without distractions."
+    },
+    "checklist": {
+      "kicker": "Quick checklist",
+      "title": "What you get",
+      "i1": "Guided programs (beginner → advanced)",
+      "i2": "Live session screen with steps",
+      "i3": "Progress tracking & summaries",
+      "i4": "Safety-first approach"
+    }
   },
   "pricing": {
+    "badge": "Pricing",
     "title": "Pricing",
-    "subtitle": "Free dives + paid dives later."
+    "subtitle": "Free version with lots of modules. One-time $5.99 to unlock everything.",
+    "side": {
+      "kicker": "Simple model",
+      "title": "Pay once, train forever",
+      "text": "No subscriptions. Unlock the full version for $5.99."
+    },
+    "plans": {
+      "free": {
+        "badge": "Free",
+        "title": "Free",
+        "subtitle": "Start today and learn the flow.",
+        "note": "forever",
+        "cta": "Explore free modules",
+        "micro": "Great to begin and build consistency.",
+        "f1": "Core programs & beginner path",
+        "f2": "Live session screen (steps)",
+        "f3": "Basic progress tracking",
+        "f4": "Safety-first pacing",
+        "f5": "Community-ready foundations"
+      },
+      "pro": {
+        "badge": "Full access",
+        "title": "Full version",
+        "subtitle": "Unlock all dives, programs and future modules.",
+        "note": "one-time",
+        "cta": "Unlock full version",
+        "micro": "Best value: everything in one purchase.",
+        "f1": "All dives & programs unlocked",
+        "f2": "Advanced CO₂ / O₂ modules",
+        "f3": "Expanded insights & summaries",
+        "f4": "Personalization & saved modes",
+        "f5": "Includes future feature drops"
+      }
+    },
+    "compare": {
+      "kicker": "What changes",
+      "title": "Free vs Full",
+      "r1": {
+        "title": "Free is already powerful",
+        "text": "You can learn the flow and train consistently."
+      },
+      "r2": {
+        "title": "Full removes limits",
+        "text": "All dives, all programs, all modules."
+      },
+      "r3": {
+        "title": "One-time purchase",
+        "text": "No subscription, no recurring charges."
+      },
+      "r4": {
+        "title": "Future-ready",
+        "text": "New modules can be included in full access."
+      }
+    }
   },
-  "contacts": { "title": "Contacts", "subtitle": "Write to us." },
+  "contacts": {
+    "badge": "Contacts",
+    "title": "Contacts",
+    "subtitle": "Write to us. We read every message.",
+    "side": {
+      "kicker": "Support",
+      "title": "Quick contact",
+      "text": "Tap the button and send an email in one click."
+    },
+    "email": {
+      "subject": "Deeply — question",
+      "body": "Hi! I have a question about Deeply:\n\n"
+    },
+    "card": {
+      "kicker": "Email",
+      "title": "Send a message",
+      "text": "We’ll help with feedback, partnerships, and early access.",
+      "cta": "Send email",
+      "micro": "Usually we respond within 24–48 hours."
+    },
+    "expect": {
+      "kicker": "What we can help with",
+      "title": "Topics",
+      "i1": "Product feedback & feature requests",
+      "i2": "Partnerships / collaborations",
+      "i3": "Early access & test flights"
+    }
+  },
   "footer": {
     "copyrightLine": "© 2026 Deeply. All rights reserved.",
     "columns": {

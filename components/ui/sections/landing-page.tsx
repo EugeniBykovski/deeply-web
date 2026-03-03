@@ -7,9 +7,9 @@ import { LandingBackground } from "./background";
 import { LandingHeader } from "./header";
 import { Footer } from "./footer";
 import { HeroSection } from "./hero";
-import { ContactsSection } from "./contacts/contacts";
-import { FeaturesSection } from "./features/features";
-import { PricingSection } from "./pricing/pricing";
+import { ContactsSection } from "./contacts/contacts-section";
+import { FeaturesSection } from "./features/features-section";
+import { PricingSection } from "./pricing/pricing-section";
 import { ProductSection } from "./product";
 
 export const LandingPage = () => {
