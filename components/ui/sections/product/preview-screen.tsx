@@ -4,7 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ProgramsScreen } from "./screens/programs";
 import { DiveScreen } from "./screens/dive";
 import { ResultsScreen } from "./screens/results";
-import { PreviewKey, TFn } from "./types";
+import { TFn } from "./types";
+import { PreviewKey } from "@/constants/nav";
 
 export const PreviewScreen = ({ t, view }: { t: TFn; view: PreviewKey }) => {
   return (

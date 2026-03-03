@@ -2,7 +2,8 @@
 
 import { useMemo } from "react";
 import { motion } from "framer-motion";
-import { PreviewKey, TFn } from "./types";
+import { TFn } from "./types";
+import { PreviewKey } from "@/constants/nav";
 
 export const PreviewTabs = ({
   t,
