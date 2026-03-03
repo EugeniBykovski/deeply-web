@@ -5,12 +5,12 @@ import { useClientTranslation } from "@/hooks/use-client-translation";
 import { Namespaces } from "@/lib/i18n";
 import { LandingBackground } from "./background";
 import { LandingHeader } from "./header";
-import { ProductSection } from "./product";
-import { FeaturesSection } from "./features";
-import { PricingSection } from "./pricing";
-import { ContactsSection } from "./contacts";
 import { Footer } from "./footer";
 import { HeroSection } from "./hero";
+import { ContactsSection } from "./contacts/contacts";
+import { FeaturesSection } from "./features/features";
+import { PricingSection } from "./pricing/pricing";
+import { ProductSection } from "./product";
 
 export const LandingPage = () => {
   const { t } = useClientTranslation(Namespaces.landing);

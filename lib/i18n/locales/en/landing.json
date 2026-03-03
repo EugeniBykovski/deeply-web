@@ -57,7 +57,104 @@
       }
     }
   },
-  "product": { "title": "Product", "subtitle": "What you get in the app." },
+  "product": {
+    "badge": "Product",
+    "title": "Product",
+    "subtitle": "What you get in the app.",
+    "description": "Deeply turns breath-hold training into guided sessions: clear steps, safe pacing, and measurable progress — from beginner routines to structured programs.",
+    "cards": {
+      "card1": {
+        "title": "Guided programs",
+        "text": "Pick a goal and follow step-by-step sessions."
+      },
+      "card2": {
+        "title": "Smart timing",
+        "text": "Intervals, holds, recovery — always on rhythm."
+      },
+      "card3": {
+        "title": "Safety-first",
+        "text": "Calm pacing, reminders, and clear boundaries."
+      },
+      "card4": {
+        "title": "Progress tracking",
+        "text": "See trends, streaks, and personal bests."
+      }
+    },
+    "forWho": {
+      "title": "Made for",
+      "line1": "Beginners who want a safe start",
+      "line2": "Freedivers who need structure and consistency",
+      "line3": "Anyone improving CO₂/O₂ tolerance and calm focus"
+    },
+    "preview": {
+      "kicker": "Interactive preview",
+      "title": "How it feels inside the app",
+      "tabs": {
+        "programs": "Programs",
+        "dive": "Dive",
+        "results": "Results"
+      },
+      "programs": {
+        "kicker": "Library",
+        "title": "Programs that guide you",
+        "card1": {
+          "title": "Pick a goal",
+          "text": "Beginner, CO₂, O₂, relaxation."
+        },
+        "card2": {
+          "title": "Session cadence",
+          "text": "Holds + recovery, tuned for calm."
+        },
+        "card3": {
+          "title": "Safe defaults",
+          "text": "No rush, no spikes — stable pace."
+        },
+        "card4": {
+          "title": "Progress signals",
+          "text": "Streaks, trends, and best holds."
+        },
+        "builder": {
+          "title": "Session steps",
+          "tag": "Auto-guided",
+          "step1": "Breathe 4–6 calm cycles",
+          "step2": "Equalize check",
+          "step3": "Descent: slow & steady"
+        }
+      },
+      "dive": {
+        "kicker": "Live session",
+        "title": "Hold + descent steps",
+        "timer": { "label": "Current hold", "total": "/ 02:00" },
+        "step1": "Breathe: calm cycles",
+        "step2": "Equalize check",
+        "step3": "Descent: slow & steady",
+        "hint": {
+          "title": "Control",
+          "tag": "Simple",
+          "text": "Hold to descend · Release to surface"
+        }
+      },
+      "results": {
+        "kicker": "Progress",
+        "title": "Results you can feel",
+        "metric1": { "label": "Calm index", "tag": "Last 7 days" },
+        "metric2": { "label": "Streak", "text": "Days in a row" },
+        "metric3": { "label": "Stability", "text": "Breath rhythm" },
+        "note": {
+          "title": "Meaningful insights",
+          "text": "No noise — just signals that help you improve."
+        }
+      }
+    },
+    "how": {
+      "kicker": "Flow",
+      "title": "How it works",
+      "tag": "Simple",
+      "step1": { "title": "Choose", "text": "Pick a goal or program." },
+      "step2": { "title": "Train", "text": "Follow steps with calm timing." },
+      "step3": { "title": "Track", "text": "See progress and adjust." }
+    }
+  },
   "features": {
     "title": "Features",
     "subtitle": "Everything you need for training."

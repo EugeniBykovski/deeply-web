@@ -92,3 +92,11 @@ export const steps = [
   "hero.phone.step2",
   "hero.phone.step3",
 ] as const;
+
+export const container = {
+  hidden: { opacity: 0, y: 10 },
+  show: { opacity: 1, y: 0, transition: { staggerChildren: 0.06 } },
+};
+
+export type PreviewKey = "programs" | "dive" | "results";
+export const ORDER: PreviewKey[] = ["programs", "dive", "results"];

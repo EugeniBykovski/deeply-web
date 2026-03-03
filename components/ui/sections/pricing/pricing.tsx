@@ -1,7 +1,7 @@
 "use client";
 
-import { Separator } from "../separator";
-import { LandingSection } from "./section";
+import { Separator } from "../../separator";
+import { LandingSection } from "../section";
 
 export const PricingSection = ({ t }: { t: (k: string) => string }) => {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { LandingSection } from "./section";
+import { LandingSection } from "../section";
 
 export const ContactsSection = ({ t }: { t: (k: string) => string }) => {
   return (
