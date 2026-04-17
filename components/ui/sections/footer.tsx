@@ -14,7 +14,7 @@ export const Footer = ({ t }: { t: (k: string) => string }) => {
       className="relative mt-14 border-t border-white/5 backdrop-blur-xs"
     >
       <div className="mx-auto max-w-7xl px-4">
-        <div className="grid grid-cols-2 justify-items-center gap-x-10 gap-y-10 py-14 md:grid-cols-5 md:justify-items-stretch">
+        <div className="grid grid-cols-2 justify-items-start gap-x-6 gap-y-8 py-10 md:grid-cols-5 md:justify-items-stretch md:gap-x-10 md:gap-y-10 md:py-14">
           {FOOTER_COLUMNS.map((col) => (
             <div key={col.titleKey} className="w-full max-w-[220px] text-left">
               <h3 className="text-sm font-semibold tracking-wide text-white/90">

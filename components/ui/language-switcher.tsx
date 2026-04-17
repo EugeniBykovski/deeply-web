@@ -31,7 +31,7 @@ export const LanguageSwitcher: FC = () => {
 
   return (
     <div
-      className="inline-flex bg-zinc-800/50 p-1 rounded-full gap-2 backdrop-blur-md shadow-inner"
+      className="inline-flex bg-zinc-800/50 p-1 rounded-full gap-1 backdrop-blur-md shadow-inner"
       aria-label="Language switcher"
     >
       {languages.map(({ code, label }) => (
@@ -39,7 +39,7 @@ export const LanguageSwitcher: FC = () => {
           key={code}
           onClick={() => handleClick(code)}
           className={cn(
-            "px-3 py-1 rounded-full text-sm font-medium transition cursor-pointer",
+            "px-3 py-1.5 rounded-full text-sm font-medium transition cursor-pointer min-h-[36px] min-w-[36px]",
             current === code
               ? "bg-(--main-color) text-zinc-200 shadow-md"
               : "text-white/70 hover:text-white hover:bg-zinc-700/30",

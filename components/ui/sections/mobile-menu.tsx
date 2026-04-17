@@ -25,7 +25,7 @@ export const MobileMenu = ({ labels }: Props) => {
             variant="ghost"
             size="icon"
             aria-label="Open menu"
-            className="group relative h-10 w-10 rounded-xl bg-white/10 ring-1 ring-white/10 backdrop-blur-xl
+            className="group relative h-11 w-11 rounded-xl bg-white/10 ring-1 ring-white/10 backdrop-blur-xl
                        transition-all hover:bg-white/15 hover:ring-white/20"
           >
             <span className="pointer-events-none absolute inset-0 rounded-xl opacity-0 blur-md transition-opacity duration-200 group-hover:opacity-100 bg-[radial-gradient(60px_40px_at_50%_0%,rgba(255,255,255,0.16),transparent_70%)]" />
@@ -35,7 +35,7 @@ export const MobileMenu = ({ labels }: Props) => {
 
         <SheetContent
           side="right"
-          className="w-[86vw] max-w-[360px] border-l border-white/10 bg-[#0B1C1D]/80 backdrop-blur-2xl"
+          className="w-[88vw] max-w-[340px] border-l border-white/10 bg-[#0B1C1D]/95 backdrop-blur-2xl overflow-y-auto"
         >
           <VisuallyHidden>
             <SheetTitle>Navigation</SheetTitle>

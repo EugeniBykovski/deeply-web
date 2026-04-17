@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/providers/i18n-provider/i18n-provider";
@@ -13,6 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0B1C1D",
+};
+
 export const metadata: Metadata = {
   title: {
     default: "Deeply — breathe, dive, progress",
@@ -26,7 +33,6 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/img/sea.png" }],
   },
   applicationName: "Deeply",
-  themeColor: "#0B1C1D",
   metadataBase: new URL("https://deeply.app"),
   openGraph: {
     title: "Deeply — breathe, dive, progress",

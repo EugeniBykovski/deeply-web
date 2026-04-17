@@ -68,7 +68,7 @@ export const ProductSection = ({ t }: Props) => {
 
   return (
     <LandingSection id="product">
-      <div className="relative overflow-hidden rounded-[44px] border border-white/10 bg-white/5 backdrop-blur-2xl">
+      <div className="relative overflow-hidden rounded-[32px] md:rounded-[44px] border border-white/10 bg-white/5 backdrop-blur-2xl">
         <motion.div
           className="pointer-events-none absolute -inset-24 opacity-35 blur-3xl"
           animate={{ x: [0, 30, 0], y: [0, -22, 0] }}
@@ -79,7 +79,7 @@ export const ProductSection = ({ t }: Props) => {
           }}
         />
 
-        <div className="relative grid gap-10 p-8 md:grid-cols-12 md:p-12">
+        <div className="relative grid gap-8 p-6 md:gap-10 md:grid-cols-12 md:p-12">
           <motion.div
             variants={container}
             initial="hidden"
@@ -92,7 +92,7 @@ export const ProductSection = ({ t }: Props) => {
               {t("product.badge")}
             </div>
 
-            <h2 className="mt-5 text-3xl font-semibold tracking-tight md:text-4xl">
+            <h2 className="mt-5 text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
               {t("product.title")}
             </h2>
 
@@ -102,7 +102,7 @@ export const ProductSection = ({ t }: Props) => {
               {t("product.description")}
             </p>
 
-            <div className="mt-7 grid gap-3 sm:grid-cols-2">
+            <div className="mt-6 grid gap-3 grid-cols-1 xs:grid-cols-2 sm:grid-cols-2">
               {cards.map((c) => (
                 <FeatureCard
                   key={c.id}

@@ -36,7 +36,7 @@ export const LandingHeader = ({ rightSlot, labels }: Props) => {
         <div className="pointer-events-none absolute inset-0 rounded-3xl bg-[radial-gradient(900px_260px_at_50%_0%,rgba(255,255,255,0),transparent_65%)] shadow-xl" />
         <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-zinc-600/5" />
 
-        <div className="relative mx-auto flex h-18 items-center gap-4 px-6">
+        <div className="relative mx-auto flex h-16 md:h-18 items-center gap-3 px-4 md:px-6">
           <a
             href="#top"
             className="flex items-center cursor-pointer p-2 bg-(--second-main-color)/20 rounded-full ring-1 ring-(--second-main-color)/50 transition-all hover:bg-(--main-color)/50"
@@ -67,7 +67,7 @@ export const LandingHeader = ({ rightSlot, labels }: Props) => {
             </div>
           </nav>
 
-          <div className="ml-auto flex items-center gap-6">
+          <div className="ml-auto flex items-center gap-3 md:gap-6">
             {rightSlot}
             <MobileMenu labels={labels} />
           </div>

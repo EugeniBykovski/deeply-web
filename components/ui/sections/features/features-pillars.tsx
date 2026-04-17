@@ -18,7 +18,7 @@ export const FeaturesPillars = ({ t }: { t: TFn }) => {
         {t("features.pillars.title")}
       </div>
 
-      <div className="mt-5 grid gap-4 md:grid-cols-3">
+      <div className="mt-5 grid gap-3 grid-cols-1 sm:grid-cols-3">
         {items.map((it) => (
           <div
             key={it.k}

@@ -17,13 +17,13 @@ export const HeroLeft = ({ t }: Props) => {
         <Sparkles className="h-4 w-4 text-emerald-200/90" />
         {t("hero.badge")}
       </div>
-      <h1 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+      <h1 className="mt-5 text-[2rem] font-semibold leading-[1.05] tracking-tight sm:text-4xl md:text-6xl">
         <span className="text-white">{t("hero.title")}</span>
       </h1>
       <p className="mt-4 max-w-xl text-base text-white/70 md:text-lg">
         {t("hero.subtitle")}
       </p>
-      <div className="mt-6 grid gap-3 text-sm text-white/70 sm:grid-cols-2">
+      <div className="mt-5 grid gap-3 text-sm text-white/70 grid-cols-1 sm:grid-cols-2">
         <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
           <div className="font-medium text-white/85">
             {t("hero.point1Title")}
@@ -39,9 +39,9 @@ export const HeroLeft = ({ t }: Props) => {
         <MiniSignal t={t} />
         <KpiCard t={t} Icon={Waves} leftValue="7" rightValue="92%" />
       </div>
-      <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <Button asChild className="rounded-2xl py-6">
-          <Link href="#product" className="inline-flex items-center gap-2">
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <Button asChild className="rounded-2xl py-5 sm:py-6 w-full sm:w-auto">
+          <Link href="#product" className="inline-flex items-center justify-center gap-2">
             {t("hero.ctaPrimary")}
             <ArrowRight className="h-4 w-4" />
           </Link>
@@ -49,15 +49,15 @@ export const HeroLeft = ({ t }: Props) => {
         <Button
           asChild
           variant="secondary"
-          className="rounded-2xl bg-white/10 py-6 text-white hover:bg-white/15"
+          className="rounded-2xl bg-white/10 py-5 sm:py-6 text-white hover:bg-white/15 w-full sm:w-auto"
         >
-          <Link href="#features" className="inline-flex items-center gap-2">
+          <Link href="#features" className="inline-flex items-center justify-center gap-2">
             <Play className="h-4 w-4" />
             {t("hero.ctaSecondary")}
           </Link>
         </Button>
       </div>
-      <div className="mt-6 flex items-center justify-center gap-5 text-sm text-white/50 md:justify-start">
+      <div className="mt-5 flex items-center justify-center gap-5 text-sm text-white/50 md:justify-start">
         <span className="hidden md:block">{t("hero.note")}</span>
         <motion.a
           href="#"

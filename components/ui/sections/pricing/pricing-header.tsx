@@ -11,13 +11,13 @@ export const PricingHeader = ({ t }: { t: TFn }) => {
           <Sparkles className="h-4 w-4 text-emerald-200/90" />
           {t("pricing.badge")}
         </div>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+        <h2 className="mt-4 text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">
           {t("pricing.title")}
         </h2>
         <p className="mt-3 max-w-2xl text-white/70">{t("pricing.subtitle")}</p>
       </div>
 
-      <div className="mt-3 w-full md:mt-0 md:w-[360px]">
+      <div className="mt-3 w-full md:mt-0 md:w-[320px] lg:w-[360px]">
         <div className="rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur-2xl">
           <div className="text-xs text-white/60">
             {t("pricing.side.kicker")}
