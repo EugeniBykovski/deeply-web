@@ -102,7 +102,7 @@ export const ProductSection = ({ t }: Props) => {
               {t("product.description")}
             </p>
 
-            <div className="mt-6 grid gap-3 grid-cols-1 xs:grid-cols-2 sm:grid-cols-2">
+            <div className="mt-6 grid gap-3 grid-cols-1 sm:grid-cols-2">
               {cards.map((c) => (
                 <FeatureCard
                   key={c.id}
@@ -135,16 +135,18 @@ export const ProductSection = ({ t }: Props) => {
           </motion.div>
 
           <div className="md:col-span-7">
-            <div className="flex items-center justify-between gap-3">
-              <div>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div className="min-w-0">
                 <div className="text-xs text-white/60">
                   {t("product.preview.kicker")}
                 </div>
-                <div className="mt-1 text-lg font-semibold text-white/90">
+                <div className="mt-1 text-base font-semibold text-white/90 sm:text-lg">
                   {t("product.preview.title")}
                 </div>
               </div>
-              <PreviewTabs t={t} active={view} onChange={setView} />
+              <div className="shrink-0">
+                <PreviewTabs t={t} active={view} onChange={setView} />
+              </div>
             </div>
 
             <div className="mt-6">

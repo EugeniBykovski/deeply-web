@@ -12,7 +12,7 @@ export const LandingSection = ({ id, children, className }: Props) => {
       id={id}
       className={[
         "md:max-w-7xl w-full mx-auto my-8 md:my-12",
-        "scroll-mt-24",
+        "scroll-mt-28",
         className ?? "",
       ].join(" ")}
     >

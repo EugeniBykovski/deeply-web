@@ -18,7 +18,7 @@ export const LandingPage = () => {
   return (
     <div
       id="top"
-      className="relative flex flex-col w-full min-h-screen lg:h-screen"
+      className="relative flex flex-col w-full min-h-screen"
     >
       <LandingBackground />
       <LandingHeader
@@ -30,7 +30,7 @@ export const LandingPage = () => {
           contacts: t("nav.contacts"),
         }}
       />
-      <main className="relative pt-6 px-4 md:px-0">
+      <main className="relative pt-6 px-3 md:px-4 overflow-x-hidden">
         <HeroSection t={t} />
         <ProductSection t={t} />
         <FeaturesSection t={t} />

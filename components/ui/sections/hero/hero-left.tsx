@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, Sparkles, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { smoothScrollTo } from "@/lib/scroll";
 import { MiniSignal } from "./hero-mini-signal";
 import { KpiCard } from "./hero-kpi-card";
 
@@ -13,11 +13,11 @@ type Props = { t: (k: string) => string };
 export const HeroLeft = ({ t }: Props) => {
   return (
     <div className="flex flex-col justify-center">
-      <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
-        <Sparkles className="h-4 w-4 text-emerald-200/90" />
-        {t("hero.badge")}
+      <div className="flex w-fit max-w-full items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-white/70">
+        <Sparkles className="h-4 w-4 shrink-0 text-emerald-200/90" />
+        <span>{t("hero.badge")}</span>
       </div>
-      <h1 className="mt-5 text-[2rem] font-semibold leading-[1.05] tracking-tight sm:text-4xl md:text-6xl">
+      <h1 className="mt-5 text-[1.75rem] font-semibold leading-[1.1] tracking-tight sm:text-4xl md:text-6xl">
         <span className="text-white">{t("hero.title")}</span>
       </h1>
       <p className="mt-4 max-w-xl text-base text-white/70 md:text-lg">
@@ -40,21 +40,24 @@ export const HeroLeft = ({ t }: Props) => {
         <KpiCard t={t} Icon={Waves} leftValue="7" rightValue="92%" />
       </div>
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <Button asChild className="rounded-2xl py-5 sm:py-6 w-full sm:w-auto">
-          <Link href="#product" className="inline-flex items-center justify-center gap-2">
+        <Button
+          className="rounded-2xl py-5 sm:py-6 w-full sm:w-auto"
+          onClick={() => smoothScrollTo("product")}
+        >
+          <span className="inline-flex items-center gap-2">
             {t("hero.ctaPrimary")}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+            <ArrowRight className="h-4 w-4 shrink-0" />
+          </span>
         </Button>
         <Button
-          asChild
           variant="secondary"
           className="rounded-2xl bg-white/10 py-5 sm:py-6 text-white hover:bg-white/15 w-full sm:w-auto"
+          onClick={() => smoothScrollTo("features")}
         >
-          <Link href="#features" className="inline-flex items-center justify-center gap-2">
-            <Play className="h-4 w-4" />
+          <span className="inline-flex items-center gap-2">
+            <Play className="h-4 w-4 shrink-0" />
             {t("hero.ctaSecondary")}
-          </Link>
+          </span>
         </Button>
       </div>
       <div className="mt-5 flex items-center justify-center gap-5 text-sm text-white/50 md:justify-start">

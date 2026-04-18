@@ -23,6 +23,10 @@ export const LandingBackground = () => {
       window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
     if (reduceMotion) return;
 
+    const isCoarsePointer =
+      window.matchMedia?.("(pointer: coarse)")?.matches ?? false;
+    if (isCoarsePointer) return;
+
     let raf = 0;
 
     let targetRX = 0;

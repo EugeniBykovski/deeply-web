@@ -32,23 +32,15 @@ const ACCENTS = {
 
 export const FeaturesGrid = ({ t }: { t: TFn }) => {
   return (
-    <div className="mt-8 grid gap-4 md:grid-cols-12">
+    <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {FEATURES.map((f) => (
-        <div
+        <FeatureCard
           key={f.id}
-          className={[
-            "md:col-span-6",
-            f.id === "liveSession" ? "md:col-span-4" : "",
-            f.id === "safety" ? "md:col-span-5" : "",
-          ].join(" ")}
-        >
-          <FeatureCard
-            t={t}
-            item={f}
-            icon={ICONS[f.id]}
-            accent={ACCENTS[f.id]}
-          />
-        </div>
+          t={t}
+          item={f}
+          icon={ICONS[f.id]}
+          accent={ACCENTS[f.id]}
+        />
       ))}
     </div>
   );

@@ -9,6 +9,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { smoothScrollTo } from "@/lib/scroll";
 import { ChevronRight, Menu, Sparkles } from "lucide-react";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
@@ -60,6 +61,11 @@ export const MobileMenu = ({ labels }: Props) => {
               <SheetClose asChild key={item.id}>
                 <a
                   href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const id = item.id;
+                    setTimeout(() => smoothScrollTo(id), 160);
+                  }}
                   className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3
                              text-white/80 transition hover:bg-white/10 hover:text-white"
                 >

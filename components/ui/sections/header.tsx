@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { landingNav, type LandingSectionId } from "@/constants/nav";
 import { MobileMenu } from "./mobile-menu";
+import { smoothScrollTo } from "@/lib/scroll";
 import Image from "next/image";
 
 type Props = {
@@ -39,6 +40,7 @@ export const LandingHeader = ({ rightSlot, labels }: Props) => {
         <div className="relative mx-auto flex h-16 md:h-18 items-center gap-3 px-4 md:px-6">
           <a
             href="#top"
+            onClick={(e) => { e.preventDefault(); smoothScrollTo("top"); }}
             className="flex items-center cursor-pointer p-2 bg-(--second-main-color)/20 rounded-full ring-1 ring-(--second-main-color)/50 transition-all hover:bg-(--main-color)/50"
           >
             <div className="relative h-9 w-9">
@@ -58,6 +60,10 @@ export const LandingHeader = ({ rightSlot, labels }: Props) => {
                 <a
                   key={item.id}
                   href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    smoothScrollTo(item.id);
+                  }}
                   className="group relative rounded-full px-4 py-2 text-sm text-white/80 transition hover:text-white"
                 >
                   <span className="relative z-10">{labels[item.id]}</span>

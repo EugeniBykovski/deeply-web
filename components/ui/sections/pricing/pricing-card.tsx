@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { Check, Crown } from "lucide-react";
+import { smoothScrollTo } from "@/lib/scroll";
 import { Plan, TFn } from "./types";
 
 export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
@@ -102,8 +102,9 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
         </div>
 
         <div className="mt-6">
-          <Link
-            href={isPro ? "#contacts" : "#product"}
+          <button
+            type="button"
+            onClick={() => smoothScrollTo(isPro ? "contacts" : "product")}
             className={[
               "inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-semibold transition",
               isPro
@@ -112,7 +113,7 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
             ].join(" ")}
           >
             {t(plan.ctaKey)}
-          </Link>
+          </button>
 
           <div className="mt-3 text-center text-xs text-white/50">
             {isPro
