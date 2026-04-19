@@ -61,10 +61,8 @@ export const FOOTER_COLUMNS = [
 ] as const;
 
 export const LEGAL = [
-  { labelKey: "footer.legal.security", href: "#" },
-  { labelKey: "footer.legal.privacy", href: "#" },
-  { labelKey: "footer.legal.terms", href: "#" },
-  { labelKey: "footer.legal.accessibility", href: "#" },
+  { labelKey: "footer.legal.privacy", href: "/privacy" },
+  { labelKey: "footer.legal.terms", href: "/terms" },
 ] as const;
 
 export const SOCIALS = [
