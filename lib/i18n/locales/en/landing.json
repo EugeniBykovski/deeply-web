@@ -317,7 +317,7 @@
     "card": {
       "kicker": "Email",
       "title": "Send a message",
-      "text": "We’ll help with feedback, partnerships, and early access.",
+      "text": "We'll help with feedback, partnerships, and early access.",
       "cta": "Send email",
       "micro": "Usually we respond within 24–48 hours."
     },
@@ -400,7 +400,7 @@
       "intro": "Please read these Terms of Service carefully before using Deeply. These Terms govern your access to and use of the App and all associated services.",
       "s1": {
         "title": "1. Acceptance of Terms",
-        "body": "By downloading, installing, or using the Deeply application ('App'), you agree to be bound by these Terms of Service ('Terms'). If you do not agree to these Terms, do not use the App.\n\nThese Terms constitute a legally binding agreement between you ('User') and Deeply ('we,' 'us,' or 'our'). We reserve the right to update these Terms at any time. Continued use of the App after changes constitutes acceptance of the revised Terms."
+        "body": "By downloading, installing, or using the Deeply application ('App'), you agree to be bound by these Terms of Service ('Terms'). If you do not agree to these Terms, do not use the App.\n\nThese Terms constitute a legally binding agreement between you ('User') and Deeply ('we,' 'us' or 'our'). We reserve the right to update these Terms at any time. Continued use of the App after changes constitutes acceptance of the revised Terms."
       },
       "s2": {
         "title": "2. Eligibility",
@@ -468,7 +468,7 @@
       },
       "s1": {
         "title": "1. Introduction",
-        "body": "Deeply ('we,' 'us,' or 'our') is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and what choices you have.\n\nThis Policy applies to the Deeply iOS application and any related services. By using the App you agree to the practices described here."
+        "body": "Deeply ('we,' 'us' or 'our') is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and what choices you have.\n\nThis Policy applies to the Deeply iOS application and any related services. By using the App you agree to the practices described here."
       },
       "s2": {
         "title": "2. Information We Collect",
