@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import {
   BarChart3,
@@ -13,12 +13,10 @@ import {
 import { LandingSection } from "../section";
 import type { FeatureCardConfig, TFn } from "./types";
 import { FeatureCard } from "./feature-card";
-import { PreviewTabs } from "./preview-tabs";
-import { PhoneFrame } from "./phone-frame";
-import { PreviewScreen } from "./preview-screen";
 import { HowItWorks } from "./how-it-works";
+import { ProductShowcase } from "./product-showcase";
 import { Separator } from "../../separator";
-import { container, ORDER, PreviewKey } from "@/constants/nav";
+import { container } from "@/constants/nav";
 
 type Props = { t: TFn };
 
@@ -57,25 +55,22 @@ export const ProductSection = ({ t }: Props) => {
     [t],
   );
 
-  const [view, setView] = useState<PreviewKey>("programs");
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setView((v) => ORDER[(ORDER.indexOf(v) + 1) % ORDER.length]);
-    }, 4200);
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <LandingSection id="product">
       <div className="relative overflow-hidden rounded-[32px] md:rounded-[44px] border border-white/10 bg-white/5 backdrop-blur-2xl">
         <div
           aria-hidden
-          className="pointer-events-none absolute -inset-24 opacity-35 blur-3xl"
+          className="pointer-events-none absolute -inset-24 opacity-40 blur-3xl"
           style={{
             background:
-              "radial-gradient(1100px 620px at 15% 15%, rgba(23,58,53,0.18), transparent 60%), radial-gradient(1100px 620px at 85% 30%, rgba(26,59,66,0.18), transparent 62%)",
+              "radial-gradient(1200px 700px at 12% 10%, rgba(23,58,53,0.24), transparent 58%), " +
+              "radial-gradient(1200px 700px at 88% 25%, rgba(26,59,66,0.22), transparent 60%), " +
+              "radial-gradient(800px 600px at 50% 90%, rgba(16,185,129,0.10), transparent 62%)",
           }}
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/12 to-transparent"
         />
 
         <div className="relative grid gap-8 p-6 md:gap-10 md:grid-cols-12 md:p-12">
@@ -101,7 +96,7 @@ export const ProductSection = ({ t }: Props) => {
               {t("product.description")}
             </p>
 
-            <div className="mt-6 grid gap-3 grid-cols-1 sm:grid-cols-2">
+            <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {cards.map((c) => (
                 <FeatureCard
                   key={c.id}
@@ -134,26 +129,7 @@ export const ProductSection = ({ t }: Props) => {
           </motion.div>
 
           <div className="md:col-span-7">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <div className="min-w-0">
-                <div className="text-xs text-white/60">
-                  {t("product.preview.kicker")}
-                </div>
-                <div className="mt-1 text-base font-semibold text-white/90 sm:text-lg">
-                  {t("product.preview.title")}
-                </div>
-              </div>
-              <div className="shrink-0">
-                <PreviewTabs t={t} active={view} onChange={setView} />
-              </div>
-            </div>
-
-            <div className="mt-6">
-              <PhoneFrame>
-                <PreviewScreen t={t} view={view} />
-              </PhoneFrame>
-            </div>
-
+            <ProductShowcase t={t} />
             <HowItWorks t={t} />
           </div>
         </div>
