@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { BarChart3 } from "lucide-react";
 
 type Props = { t: (k: string) => string };
@@ -20,13 +19,12 @@ export const MiniSignal = ({ t }: Props) => {
         </div>
       </div>
       <div className="mt-3 h-10 w-full overflow-hidden rounded-xl bg-white/4 ring-1 ring-white/10">
-        <motion.div
+        <div
           className="h-full w-[140%] opacity-90"
-          animate={{ x: ["-20%", "0%", "-20%"] }}
-          transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
           style={{
             background:
               "linear-gradient(90deg, transparent 0%, rgba(16,185,129,0.18) 20%, rgba(45,212,191,0.16) 50%, rgba(16,185,129,0.18) 80%, transparent 100%)",
+            transform: "translateX(-10%)",
           }}
         />
       </div>

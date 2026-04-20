@@ -69,10 +69,9 @@ export const ProductSection = ({ t }: Props) => {
   return (
     <LandingSection id="product">
       <div className="relative overflow-hidden rounded-[32px] md:rounded-[44px] border border-white/10 bg-white/5 backdrop-blur-2xl">
-        <motion.div
+        <div
+          aria-hidden
           className="pointer-events-none absolute -inset-24 opacity-35 blur-3xl"
-          animate={{ x: [0, 30, 0], y: [0, -22, 0] }}
-          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
           style={{
             background:
               "radial-gradient(1100px 620px at 15% 15%, rgba(23,58,53,0.18), transparent 60%), radial-gradient(1100px 620px at 85% 30%, rgba(26,59,66,0.18), transparent 62%)",

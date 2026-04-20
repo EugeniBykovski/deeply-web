@@ -30,7 +30,7 @@ export const LandingPage = () => {
           contacts: t("nav.contacts"),
         }}
       />
-      <main className="relative pt-6 px-3 md:px-4 overflow-x-hidden">
+      <main className="relative pt-6 px-3 md:px-4">
         <HeroSection t={t} />
         <ProductSection t={t} />
         <FeaturesSection t={t} />
