@@ -35,11 +35,11 @@ export const ProductShowcase = ({ t }: { t: TFn }) => {
 
         <div className="grid grid-cols-3 gap-3">
           {[
-            { label: t("product.preview.tabs.programs"), value: "12+", Icon: Layers },
-            { label: t("product.preview.dive.timer.label"), value: "2:30", Icon: Clock },
-            { label: t("product.preview.results.metric1.label"), value: "+18%", Icon: TrendingUp },
-          ].map(({ label, value, Icon }) => (
-            <div key={label} className="flex flex-col items-center rounded-2xl border border-white/10 bg-white/5 p-4">
+            { id: "programs", label: t("product.preview.tabs.programs"), value: "12+", Icon: Layers },
+            { id: "hold", label: t("product.preview.dive.timer.label"), value: "2:30", Icon: Clock },
+            { id: "progress", label: t("product.preview.results.metric1.label"), value: "+18%", Icon: TrendingUp },
+          ].map(({ id, label, value, Icon }) => (
+            <div key={id} className="flex flex-col items-center rounded-2xl border border-white/10 bg-white/5 p-4">
               <Icon className="mb-2 h-4 w-4 text-emerald-200/55" />
               <div className="text-lg font-semibold text-white/88">{value}</div>
               <div className="mt-0.5 text-center text-[10px] leading-tight text-white/45">{label}</div>
