@@ -11,6 +11,7 @@ import { ContactsSection } from "./contacts/contacts-section";
 import { FeaturesSection } from "./features/features-section";
 import { PricingSection } from "./pricing/pricing-section";
 import { ProductSection } from "./product";
+import { WellnessSection } from "./wellness/wellness-section";
 
 export const LandingPage = () => {
   const { t } = useClientTranslation(Namespaces.landing);
@@ -34,6 +35,7 @@ export const LandingPage = () => {
         <HeroSection t={t} />
         <ProductSection t={t} />
         <FeaturesSection t={t} />
+        <WellnessSection t={t} />
         <PricingSection t={t} />
         <ContactsSection t={t} />
       </main>

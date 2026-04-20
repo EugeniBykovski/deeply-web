@@ -245,60 +245,101 @@
   },
   "pricing": {
     "badge": "Pricing",
-    "title": "Pricing",
-    "subtitle": "Free version with lots of modules. One-time $5.99 to unlock everything.",
+    "title": "Simple, honest pricing",
+    "subtitle": "Choose the plan that fits your training rhythm. Cancel anytime.",
     "side": {
-      "kicker": "Simple model",
-      "title": "Pay once, train forever",
-      "text": "No subscriptions. Unlock the full version for $5.99."
+      "kicker": "Every plan includes",
+      "title": "Full access to all features",
+      "text": "Programs, dives, insights, CO₂ & O₂ modules — everything unlocked."
     },
     "plans": {
-      "free": {
-        "badge": "Free",
-        "title": "Free",
-        "subtitle": "Start today and learn the flow.",
-        "note": "forever",
-        "cta": "Explore free modules",
-        "micro": "Great to begin and build consistency.",
-        "f1": "Core programs & beginner path",
-        "f2": "Live session screen (steps)",
-        "f3": "Basic progress tracking",
-        "f4": "Safety-first pacing",
-        "f5": "Community-ready foundations"
+      "weekly": {
+        "badge": "Flexible",
+        "title": "Weekly",
+        "subtitle": "Try it for a week, no commitment.",
+        "note": "/ week",
+        "cta": "Start weekly",
+        "micro": "Billed every 7 days. Cancel anytime.",
+        "f1": "All programs & dives unlocked",
+        "f2": "Live session screen",
+        "f3": "Progress tracking & insights",
+        "f4": "CO₂ / O₂ modules",
+        "f5": "Safety-first pacing"
       },
-      "pro": {
-        "badge": "Full access",
-        "title": "Full version",
-        "subtitle": "Unlock all dives, programs and future modules.",
-        "note": "one-time",
-        "cta": "Unlock full version",
-        "micro": "Best value: everything in one purchase.",
-        "f1": "All dives & programs unlocked",
-        "f2": "Advanced CO₂ / O₂ modules",
-        "f3": "Expanded insights & summaries",
-        "f4": "Personalization & saved modes",
-        "f5": "Includes future feature drops"
+      "monthly": {
+        "badge": "Popular",
+        "title": "Monthly",
+        "subtitle": "Build a consistent training habit.",
+        "note": "/ month",
+        "cta": "Start monthly",
+        "micro": "Billed every 30 days. Cancel anytime.",
+        "f1": "All programs & dives unlocked",
+        "f2": "Live session screen",
+        "f3": "Progress tracking & insights",
+        "f4": "CO₂ / O₂ modules",
+        "f5": "Safety-first pacing"
+      },
+      "yearly": {
+        "badge": "Best value",
+        "title": "Yearly",
+        "subtitle": "Serious about your training? Go annual.",
+        "note": "/ year",
+        "savings": "Save 17%",
+        "cta": "Start yearly",
+        "micro": "Billed once a year. Best rate.",
+        "f1": "All programs & dives unlocked",
+        "f2": "Live session screen",
+        "f3": "Progress tracking & insights",
+        "f4": "CO₂ / O₂ modules",
+        "f5": "Safety-first pacing"
       }
     },
     "compare": {
-      "kicker": "What changes",
-      "title": "Free vs Full",
+      "kicker": "Every plan includes",
+      "title": "Full access, no limits",
       "r1": {
-        "title": "Free is already powerful",
-        "text": "You can learn the flow and train consistently."
+        "title": "All programs unlocked",
+        "text": "Beginner to advanced, CO₂ and O₂ sessions."
       },
       "r2": {
-        "title": "Full removes limits",
-        "text": "All dives, all programs, all modules."
+        "title": "Live session screen",
+        "text": "Guided steps, holds, and recovery timing."
       },
       "r3": {
-        "title": "One-time purchase",
-        "text": "No subscription, no recurring charges."
+        "title": "Progress & insights",
+        "text": "Streaks, calm index, and trend charts."
       },
       "r4": {
-        "title": "Future-ready",
-        "text": "New modules can be included in full access."
+        "title": "Cancel anytime",
+        "text": "No lock-in. Switch plans or stop whenever."
       }
+    }
+  },
+  "wellness": {
+    "badge": "Mental calm",
+    "title": "A breath you can trust",
+    "subtitle": "Structured breath-hold training activates the parasympathetic system — the same mechanism that breaks a panic spiral.",
+    "points": {
+      "p1": {
+        "title": "Interrupts the spiral",
+        "text": "A controlled breath sequence disrupts the anxiety feedback loop within seconds."
+      },
+      "p2": {
+        "title": "Lowers heart rate",
+        "text": "Regular CO₂ training makes your calm response faster and more reliable."
+      },
+      "p3": {
+        "title": "Builds a habit",
+        "text": "Daily sessions train your nervous system to return to baseline without effort."
+      },
+      "p4": {
+        "title": "Works anywhere",
+        "text": "No equipment. No special place. Just your breath."
+      }
+    },
+    "note": {
+      "title": "Not a replacement for medical care",
+      "text": "Deeply supports mental calm through breathing practice. For clinical anxiety or panic disorder, always consult a professional."
     }
   },
   "contacts": {

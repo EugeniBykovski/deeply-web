@@ -1,28 +1,26 @@
 "use client";
 
-import { Check, Crown } from "lucide-react";
+import { Check, Crown, Tag } from "lucide-react";
 import { smoothScrollTo } from "@/lib/scroll";
 import { Plan, TFn } from "./types";
 
 export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
-  const isPro = plan.id === "pro";
+  const isHighlight = !!plan.highlight;
 
   return (
     <div
       className={[
         "group relative overflow-hidden rounded-[32px] border backdrop-blur-2xl",
-        plan.highlight
+        isHighlight
           ? "border-emerald-200/20 bg-white/7 ring-1 ring-emerald-200/15"
           : "border-white/10 bg-white/5",
       ].join(" ")}
     >
       <div
-        className={[
-          "pointer-events-none absolute -inset-24 opacity-35 blur-3xl",
-          plan.highlight ? "opacity-55" : "opacity-35",
-        ].join(" ")}
+        className="pointer-events-none absolute -inset-24 blur-3xl"
         style={{
-          background: plan.highlight
+          opacity: isHighlight ? 0.55 : 0.35,
+          background: isHighlight
             ? "radial-gradient(800px 420px at 20% 20%, rgba(16,185,129,0.22), transparent 60%), radial-gradient(800px 420px at 85% 30%, rgba(45,212,191,0.16), transparent 62%)"
             : "radial-gradient(800px 420px at 25% 25%, rgba(26,59,66,0.20), transparent 60%), radial-gradient(800px 420px at 85% 35%, rgba(23,58,53,0.14), transparent 62%)",
         }}
@@ -31,7 +29,7 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
       <div className="relative p-6 md:p-7">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap">
               <div className="text-sm font-semibold text-white/90">
                 {t(plan.titleKey)}
               </div>
@@ -39,12 +37,18 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
                 <span
                   className={[
                     "rounded-full border px-2.5 py-1 text-[11px]",
-                    isPro
+                    isHighlight
                       ? "border-emerald-200/20 bg-emerald-400/10 text-emerald-100/90"
                       : "border-white/10 bg-white/5 text-white/70",
                   ].join(" ")}
                 >
                   {t(plan.badgeKey)}
+                </span>
+              )}
+              {plan.savingsKey && (
+                <span className="inline-flex items-center gap-1 rounded-full border border-amber-300/20 bg-amber-400/10 px-2.5 py-1 text-[11px] text-amber-200/85">
+                  <Tag className="h-2.5 w-2.5" />
+                  {t(plan.savingsKey)}
                 </span>
               )}
             </div>
@@ -55,17 +59,18 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
 
           <div
             className={[
-              "flex h-11 w-11 items-center justify-center rounded-2xl ring-1",
-              isPro
+              "flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl ring-1",
+              isHighlight
                 ? "bg-emerald-400/12 ring-emerald-200/15"
                 : "bg-white/6 ring-white/10",
             ].join(" ")}
           >
-            {isPro ? (
-              <Crown className="h-5 w-5 text-emerald-200/90" />
-            ) : (
-              <Crown className="h-5 w-5 text-white/50" />
-            )}
+            <Crown
+              className={[
+                "h-5 w-5",
+                isHighlight ? "text-emerald-200/90" : "text-white/50",
+              ].join(" ")}
+            />
           </div>
         </div>
 
@@ -82,14 +87,11 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
 
         <div className="mt-5 space-y-2.5">
           {plan.featuresKeys.map((k) => (
-            <div
-              key={k}
-              className="flex items-start gap-2 text-sm text-white/65"
-            >
+            <div key={k} className="flex items-start gap-2 text-sm text-white/65">
               <span
                 className={[
-                  "mt-[3px] inline-flex h-5 w-5 items-center justify-center rounded-full",
-                  isPro
+                  "mt-[3px] inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full",
+                  isHighlight
                     ? "bg-emerald-400/14 text-emerald-200/90"
                     : "bg-white/7 text-white/70",
                 ].join(" ")}
@@ -104,10 +106,10 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
         <div className="mt-6">
           <button
             type="button"
-            onClick={() => smoothScrollTo(isPro ? "contacts" : "product")}
+            onClick={() => smoothScrollTo("contacts")}
             className={[
               "inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-semibold transition",
-              isPro
+              isHighlight
                 ? "bg-emerald-200/90 text-[#061415] hover:bg-emerald-200"
                 : "bg-white/10 text-white hover:bg-white/15",
             ].join(" ")}
@@ -116,9 +118,7 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
           </button>
 
           <div className="mt-3 text-center text-xs text-white/50">
-            {isPro
-              ? t("pricing.plans.pro.micro")
-              : t("pricing.plans.free.micro")}
+            {t(`pricing.plans.${plan.id}.micro`)}
           </div>
         </div>
       </div>

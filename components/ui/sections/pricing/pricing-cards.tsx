@@ -5,7 +5,7 @@ import { Plan, TFn } from "./types";
 
 export const PricingCards = ({ t, plans }: { t: TFn; plans: Plan[] }) => {
   return (
-    <div className="mt-8 grid gap-4 md:grid-cols-2">
+    <div className="mt-8 grid gap-4 md:grid-cols-3">
       {plans.map((p) => (
         <PricingCard key={p.id} t={t} plan={p} />
       ))}

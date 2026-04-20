@@ -1,6 +1,6 @@
 export type TFn = (k: string) => string;
 
-export type PlanId = "free" | "pro";
+export type PlanId = "weekly" | "monthly" | "yearly";
 
 export type Plan = {
   id: PlanId;
@@ -12,4 +12,5 @@ export type Plan = {
   highlight?: boolean;
   featuresKeys: string[];
   badgeKey?: string;
+  savingsKey?: string;
 };
