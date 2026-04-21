@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   description:
     "Deeply — приложение для тренировок задержки дыхания и фридайвинга: погружения по шагам, прогресс, безопасность и мотивация.",
   icons: {
-    icon: [{ url: "/img/sea.png", type: "image/png" }],
-    apple: [{ url: "/img/sea.png" }],
-    shortcut: [{ url: "/img/sea.png" }],
+    icon: [{ url: "/img/logo.ico", type: "image/ico" }],
+    apple: [{ url: "/img/logo.ico" }],
+    shortcut: [{ url: "/img/logo.ico" }],
   },
   applicationName: "Deeply",
   metadataBase: new URL("https://deeply.app"),
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     description:
       "Тренировки задержки дыхания и фридайвинга: погружения по шагам, прогресс и безопасность.",
     type: "website",
-    images: [{ url: "/img/sea.png" }],
+    images: [{ url: "/img/logo.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Deeply — breathe, dive, progress",
     description:
       "Тренировки задержки дыхания и фридайвинга: погружения по шагам, прогресс и безопасность.",
-    images: ["/img/sea.png"],
+    images: ["/img/logo.png"],
   },
 };
 
