@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo } from "react";
-import { motion } from "framer-motion";
 import {
   BarChart3,
   Compass,
@@ -16,7 +15,6 @@ import { FeatureCard } from "./feature-card";
 import { HowItWorks } from "./how-it-works";
 import { ProductShowcase } from "./product-showcase";
 import { Separator } from "../../separator";
-import { container } from "@/constants/nav";
 
 type Props = { t: TFn };
 
@@ -74,13 +72,7 @@ export const ProductSection = ({ t }: Props) => {
         />
 
         <div className="relative grid gap-8 p-6 md:gap-10 md:grid-cols-12 md:p-12">
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-80px" }}
-            className="md:col-span-5"
-          >
+          <div className="md:col-span-5">
             <div className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
               <Sparkles className="h-4 w-4 text-emerald-200/90" />
               {t("product.badge")}
@@ -126,7 +118,7 @@ export const ProductSection = ({ t }: Props) => {
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
 
           <div className="md:col-span-7">
             <ProductShowcase t={t} />

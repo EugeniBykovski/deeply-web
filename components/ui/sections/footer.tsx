@@ -6,13 +6,7 @@ import Link from "next/link";
 
 export const Footer = ({ t }: { t: (k: string) => string }) => {
   return (
-    <motion.footer
-      initial={{ opacity: 0, y: 14 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      className="relative mt-14 border-t border-white/5 backdrop-blur-xs"
-    >
+    <footer className="relative mt-14 border-t border-white/5 backdrop-blur-xs">
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-2 justify-items-start gap-x-6 gap-y-8 py-10 md:grid-cols-5 md:justify-items-stretch md:gap-x-10 md:gap-y-10 md:py-14">
           {FOOTER_COLUMNS.map((col) => (
@@ -85,6 +79,6 @@ export const Footer = ({ t }: { t: (k: string) => string }) => {
           </div>
         </div>
       </div>
-    </motion.footer>
+    </footer>
   );
 };

@@ -1,11 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { landingNav, type LandingSectionId } from "@/constants/nav";
 import {
   Sheet,
   SheetContent,
-  SheetTrigger,
-  SheetClose,
   SheetTitle,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -18,21 +17,22 @@ type Props = {
 };
 
 export const MobileMenu = ({ labels }: Props) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="md:hidden">
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button
-            variant="ghost"
-            size="icon"
-            aria-label="Open menu"
-            className="group relative h-11 w-11 rounded-xl bg-white/10 ring-1 ring-white/10 backdrop-blur-xl
-                       transition-all hover:bg-white/15 hover:ring-white/20"
-          >
-            <span className="pointer-events-none absolute inset-0 rounded-xl opacity-0 blur-md transition-opacity duration-200 group-hover:opacity-100 bg-[radial-gradient(60px_40px_at_50%_0%,rgba(255,255,255,0.16),transparent_70%)]" />
-            <Menu className="relative h-5 w-5 text-white/85" />
-          </Button>
-        </SheetTrigger>
+      <Sheet open={open} onOpenChange={setOpen}>
+        <Button
+          variant="ghost"
+          size="icon"
+          aria-label="Open menu"
+          onClick={() => setOpen(true)}
+          className="group relative h-11 w-11 rounded-xl bg-white/10 ring-1 ring-white/10 backdrop-blur-xl
+                     transition-all hover:bg-white/15 hover:ring-white/20"
+        >
+          <span className="pointer-events-none absolute inset-0 rounded-xl opacity-0 blur-md transition-opacity duration-200 group-hover:opacity-100 bg-[radial-gradient(60px_40px_at_50%_0%,rgba(255,255,255,0.16),transparent_70%)]" />
+          <Menu className="relative h-5 w-5 text-white/85" />
+        </Button>
 
         <SheetContent
           side="right"
@@ -58,21 +58,20 @@ export const MobileMenu = ({ labels }: Props) => {
 
           <nav className="mt-5 space-y-2">
             {landingNav.map((item) => (
-              <SheetClose asChild key={item.id}>
-                <a
-                  href={`#${item.id}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const id = item.id;
-                    setTimeout(() => smoothScrollTo(id), 160);
-                  }}
-                  className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3
-                             text-white/80 transition hover:bg-white/10 hover:text-white"
-                >
-                  <span className="text-sm font-medium">{labels[item.id]}</span>
-                  <ChevronRight className="h-4 w-4 opacity-50 transition group-hover:translate-x-0.5 group-hover:opacity-80" />
-                </a>
-              </SheetClose>
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpen(false);
+                  setTimeout(() => smoothScrollTo(item.id), 300);
+                }}
+                className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3
+                           text-white/80 transition hover:bg-white/10 hover:text-white"
+              >
+                <span className="text-sm font-medium">{labels[item.id]}</span>
+                <ChevronRight className="h-4 w-4 opacity-50 transition group-hover:translate-x-0.5 group-hover:opacity-80" />
+              </a>
             ))}
           </nav>
         </SheetContent>
