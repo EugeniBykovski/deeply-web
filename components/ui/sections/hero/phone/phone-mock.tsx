@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { PhoneScreen } from "./phone-screen";
 
 type Props = { t: (k: string) => string };
 
@@ -12,21 +11,31 @@ export const PhoneMock = ({ t }: Props) => {
       <div className="pointer-events-none absolute -inset-8 rounded-full bg-[radial-gradient(closest-side,rgba(45,212,191,0.14),transparent_72%)] blur-3xl" />
 
       <div className="relative">
+        {/* Real app screenshot fills the screen area behind the phone frame */}
         <div
-          className="absolute inset-0"
+          className="absolute overflow-hidden"
           style={{ inset: "1% 4.6% 1.2% 4.6%" }}
         >
-          <PhoneScreen t={t} />
+          <Image
+            src="/img/iphone-1.jpg"
+            alt={t("hero.phone.previewAlt")}
+            fill
+            sizes="(max-width: 480px) 75vw, (max-width: 768px) 320px, 360px"
+            className="object-cover object-top select-none"
+            priority
+          />
         </div>
 
+        {/* Phone frame overlay — sits on top of the screenshot */}
         <Image
           src="/img/phone.png"
-          alt={t("hero.phone.previewAlt")}
+          alt=""
+          aria-hidden
           width={900}
           height={1800}
           priority
           sizes="(max-width: 480px) 75vw, (max-width: 768px) 320px, 360px"
-          className="relative h-auto w-full select-none"
+          className="relative h-auto w-full select-none pointer-events-none"
         />
       </div>
     </div>

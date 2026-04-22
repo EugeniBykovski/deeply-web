@@ -1,6 +1,6 @@
 export type TFn = (k: string) => string;
 
-export type PlanId = "weekly" | "monthly" | "yearly";
+export type PlanId = "free" | "weekly" | "monthly" | "yearly";
 
 export type Plan = {
   id: PlanId;

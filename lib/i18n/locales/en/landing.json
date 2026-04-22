@@ -15,7 +15,7 @@
     "point2Title": "Safety-first",
     "point2Text": "Clear steps + calm pacing.",
     "ctaPrimary": "Explore product",
-    "ctaSecondary": "Watch demo",
+    "ctaSecondary": "Watch features",
     "note": "Coming soon on iOS",
     "storeAlt": "Download on the App Store",
     "signal": {
@@ -124,7 +124,10 @@
       "dive": {
         "kicker": "Live session",
         "title": "Hold + descent steps",
-        "timer": { "label": "Current hold", "total": "/ 02:00" },
+        "timer": {
+          "label": "Current hold",
+          "total": "/ 02:00"
+        },
         "step1": "Breathe: calm cycles",
         "step2": "Equalize check",
         "step3": "Descent: slow & steady",
@@ -137,9 +140,18 @@
       "results": {
         "kicker": "Progress",
         "title": "Results you can feel",
-        "metric1": { "label": "Calm index", "tag": "Last 7 days" },
-        "metric2": { "label": "Streak", "text": "Days in a row" },
-        "metric3": { "label": "Stability", "text": "Breath rhythm" },
+        "metric1": {
+          "label": "Calm index",
+          "tag": "Last 7 days"
+        },
+        "metric2": {
+          "label": "Streak",
+          "text": "Days in a row"
+        },
+        "metric3": {
+          "label": "Stability",
+          "text": "Breath rhythm"
+        },
         "note": {
           "title": "Meaningful insights",
           "text": "No noise — just signals that help you improve."
@@ -150,9 +162,18 @@
       "kicker": "Flow",
       "title": "How it works",
       "tag": "Simple",
-      "step1": { "title": "Choose", "text": "Pick a goal or program." },
-      "step2": { "title": "Train", "text": "Follow steps with calm timing." },
-      "step3": { "title": "Track", "text": "See progress and adjust." }
+      "step1": {
+        "title": "Choose",
+        "text": "Pick a goal or program."
+      },
+      "step2": {
+        "title": "Train",
+        "text": "Follow steps with calm timing."
+      },
+      "step3": {
+        "title": "Track",
+        "text": "See progress and adjust."
+      }
     }
   },
   "features": {
@@ -253,6 +274,18 @@
       "text": "Programs, dives, insights, CO₂ & O₂ modules — everything unlocked."
     },
     "plans": {
+      "free": {
+        "badge": "Free",
+        "title": "Free",
+        "subtitle": "Get started, no card required.",
+        "note": "/ forever",
+        "cta": "Download free",
+        "micro": "No credit card. No commitment.",
+        "f1": "1 beginner breath-hold program",
+        "f2": "Basic dive timer",
+        "f3": "Session history (last 5)",
+        "f4": "Community support"
+      },
       "weekly": {
         "badge": "Flexible",
         "title": "Weekly",
@@ -368,6 +401,11 @@
       "i1": "Product feedback & feature requests",
       "i2": "Partnerships / collaborations",
       "i3": "Early access & test flights"
+    },
+    "phone": {
+      "kicker": "Phone",
+      "title": "+48 515 199 028",
+      "text": "Available weekdays, 10:00–18:00 CET."
     }
   },
   "footer": {

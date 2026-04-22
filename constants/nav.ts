@@ -1,6 +1,5 @@
 import { FeatureItem } from "@/components/ui/sections/features/types";
 import { Plan } from "@/components/ui/sections/pricing/types";
-import { Instagram, Music2 } from "lucide-react";
 
 export type LandingSectionId = "product" | "features" | "pricing" | "contacts";
 
@@ -18,44 +17,19 @@ export const FOOTER_COLUMNS = [
     titleKey: "footer.columns.product.title",
     links: [
       { labelKey: "footer.columns.product.dives", href: "#product" },
-      { labelKey: "footer.columns.product.integrations", href: "#" },
       { labelKey: "footer.columns.product.features", href: "#features" },
-      { labelKey: "footer.columns.product.templates", href: "#" },
-      { labelKey: "footer.columns.product.compare", href: "#" },
-      { labelKey: "footer.columns.product.security", href: "#" },
-    ],
-  },
-  {
-    titleKey: "footer.columns.solutions.title",
-    links: [
-      { labelKey: "footer.columns.solutions.beginners", href: "#" },
-      { labelKey: "footer.columns.solutions.advanced", href: "#" },
-      { labelKey: "footer.columns.solutions.coaches", href: "#" },
-      { labelKey: "footer.columns.solutions.teams", href: "#" },
-      { labelKey: "footer.columns.solutions.partners", href: "#" },
     ],
   },
   {
     titleKey: "footer.columns.company.title",
     links: [
-      { labelKey: "footer.columns.company.partnerships", href: "#" },
-      { labelKey: "footer.columns.company.contacts", href: "#contacts" },
-    ],
-  },
-  {
-    titleKey: "footer.columns.resources.title",
-    links: [
-      { labelKey: "footer.columns.resources.gettingStarted", href: "#" },
-      { labelKey: "footer.columns.resources.examples", href: "#" },
-      { labelKey: "footer.columns.resources.faq", href: "#" },
+      { labelKey: "footer.columns.company.contacts", href: "/contacts" },
     ],
   },
   {
     titleKey: "footer.columns.getInTouch.title",
     links: [
-      { labelKey: "footer.columns.getInTouch.support", href: "#contacts" },
-      { labelKey: "footer.columns.getInTouch.helpCenter", href: "#" },
-      { labelKey: "footer.columns.getInTouch.forPartners", href: "#" },
+      { labelKey: "footer.columns.getInTouch.support", href: "/contacts" },
     ],
   },
 ] as const;
@@ -65,20 +39,7 @@ export const LEGAL = [
   { labelKey: "footer.legal.terms", href: "/terms" },
 ] as const;
 
-export const SOCIALS = [
-  {
-    key: "instagram",
-    labelKey: "footer.socials.instagram",
-    Icon: Instagram,
-    href: "#",
-  },
-  {
-    key: "tiktok",
-    labelKey: "footer.socials.tiktok",
-    Icon: Music2,
-    href: "#",
-  },
-] as const;
+export const SOCIALS: never[] = [];
 
 export const SEQUENCE = [
   { depth: "-4.2", rate: "0.6", phaseKey: "hero.phone.phase.relax" },
@@ -166,6 +127,21 @@ export const FEATURES: FeatureItem[] = [
 
 export const PLANS: Plan[] = [
   {
+    id: "free",
+    titleKey: "pricing.plans.free.title",
+    subtitleKey: "pricing.plans.free.subtitle",
+    price: "$0",
+    priceNoteKey: "pricing.plans.free.note",
+    ctaKey: "pricing.plans.free.cta",
+    featuresKeys: [
+      "pricing.plans.free.f1",
+      "pricing.plans.free.f2",
+      "pricing.plans.free.f3",
+      "pricing.plans.free.f4",
+    ],
+    badgeKey: "pricing.plans.free.badge",
+  },
+  {
     id: "weekly",
     titleKey: "pricing.plans.weekly.title",
     subtitleKey: "pricing.plans.weekly.subtitle",
@@ -218,3 +194,4 @@ export const PLANS: Plan[] = [
 ];
 
 export const EMAIL = "bykovskieug@gmail.com";
+export const PHONE = "+48515199028";
