@@ -1,7 +1,6 @@
 "use client";
 
-import { FOOTER_COLUMNS, LEGAL, SOCIALS } from "@/constants/nav";
-import { motion } from "framer-motion";
+import { FOOTER_COLUMNS, LEGAL } from "@/constants/nav";
 import Link from "next/link";
 
 export const Footer = ({ t }: { t: (k: string) => string }) => {
@@ -55,29 +54,6 @@ export const Footer = ({ t }: { t: (k: string) => string }) => {
                 </Link>
               ))}
             </div>
-            {SOCIALS.length > 0 && (
-              <div className="flex items-center justify-center gap-2 md:justify-end">
-                {SOCIALS.map(({ key, href, labelKey, Icon }) => (
-                  <motion.div
-                    key={key}
-                    whileHover={{ y: -1 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    <Link
-                      href={href}
-                      aria-label={t(labelKey)}
-                      className="group relative inline-flex h-10 w-10 items-center justify-center rounded-xl
-                     bg-white/10 ring-1 ring-white/10
-                     transition-all duration-200
-                     hover:bg-white/10 hover:ring-white/20
-                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-                    >
-                      <Icon className="relative h-[20px] w-[20px] text-white/80 transition-colors duration-200 group-hover:text-white" />
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </div>

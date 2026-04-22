@@ -22,9 +22,7 @@ export const FOOTER_COLUMNS = [
   },
   {
     titleKey: "footer.columns.company.title",
-    links: [
-      { labelKey: "footer.columns.company.contacts", href: "/contacts" },
-    ],
+    links: [{ labelKey: "footer.columns.company.contacts", href: "/contacts" }],
   },
   {
     titleKey: "footer.columns.getInTouch.title",
@@ -38,8 +36,6 @@ export const LEGAL = [
   { labelKey: "footer.legal.privacy", href: "/privacy" },
   { labelKey: "footer.legal.terms", href: "/terms" },
 ] as const;
-
-export const SOCIALS: never[] = [];
 
 export const SEQUENCE = [
   { depth: "-4.2", rate: "0.6", phaseKey: "hero.phone.phase.relax" },
@@ -138,6 +134,7 @@ export const PLANS: Plan[] = [
       "pricing.plans.free.f2",
       "pricing.plans.free.f3",
       "pricing.plans.free.f4",
+      "pricing.plans.weekly.f3",
     ],
     badgeKey: "pricing.plans.free.badge",
   },
