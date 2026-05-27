@@ -2,7 +2,6 @@
 
 import { Check, Crown, Sparkles, Tag } from "lucide-react";
 import Link from "next/link";
-import { smoothScrollTo } from "@/lib/scroll";
 import { Plan, TFn } from "./types";
 
 export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
@@ -118,15 +117,18 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
         <div className="mt-6">
           {isFree ? (
             <Link
-              href="https://apps.apple.com/app/deeply"
+              href="https://apps.apple.com/pl/app/deeply-ocean/id6759560878"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-semibold transition bg-white/8 text-white/80 hover:bg-white/12"
             >
               {t(plan.ctaKey)}
             </Link>
           ) : (
-            <button
-              type="button"
-              onClick={() => smoothScrollTo("contacts")}
+            <Link
+              href="https://apps.apple.com/pl/app/deeply-ocean/id6759560878"
+              target="_blank"
+              rel="noopener noreferrer"
               className={[
                 "inline-flex w-full items-center justify-center rounded-2xl px-4 py-3 text-sm font-semibold transition",
                 isHighlight
@@ -135,7 +137,7 @@ export const PricingCard = ({ t, plan }: { t: TFn; plan: Plan }) => {
               ].join(" ")}
             >
               {t(plan.ctaKey)}
-            </button>
+            </Link>
           )}
 
           <div className="mt-3 text-center text-xs text-white/50">

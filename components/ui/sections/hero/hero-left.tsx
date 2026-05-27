@@ -63,7 +63,9 @@ export const HeroLeft = ({ t }: Props) => {
       <div className="mt-5 flex items-center justify-center gap-5 text-sm text-white/50 md:justify-start">
         <span className="hidden md:block">{t("hero.note")}</span>
         <motion.a
-          href="#"
+          href="https://apps.apple.com/pl/app/deeply-ocean/id6759560878"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ y: -1 }}
           whileTap={{ scale: 0.98 }}
           className="inline-flex items-center rounded-full px-6 py-2 transition-all bg-emerald-200/90 hover:bg-emerald-200"
