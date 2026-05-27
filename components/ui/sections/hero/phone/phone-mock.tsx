@@ -7,7 +7,7 @@ type Props = { t: (k: string) => string };
 
 export const PhoneMock = ({ t }: Props) => {
   return (
-    <div className="relative mx-auto w-[min(280px,75vw)] sm:w-[320px] md:w-[360px]">
+    <div className="relative mx-auto w-[min(280px,75vw)] sm:w-[320px] md:w-[min(360px,100%)]">
       <div className="pointer-events-none absolute -inset-10 rounded-full bg-[radial-gradient(closest-side,rgba(16,185,129,0.20),transparent_70%)] blur-2xl" />
       <div className="pointer-events-none absolute -inset-8 rounded-full bg-[radial-gradient(closest-side,rgba(45,212,191,0.14),transparent_72%)] blur-3xl" />
 

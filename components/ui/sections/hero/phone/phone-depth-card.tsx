@@ -4,7 +4,7 @@ type Props = { t: (k: string) => string };
 
 export const PhoneDepthCard = ({ t }: Props) => {
   return (
-    <div className="mt-4 md:mt-6 rounded-3xl border border-white/10 bg-white/6 p-4">
+    <div className="mt-3 rounded-3xl border border-white/10 bg-white/6 p-4 sm:mt-4 md:mt-6">
       <div className="flex items-center justify-between">
         <div>
           <div className="text-[12px] text-white/60">
@@ -21,7 +21,7 @@ export const PhoneDepthCard = ({ t }: Props) => {
           </div>
         </div>
 
-        <div className="relative h-14 w-4 overflow-hidden rounded-full bg-white/8 ring-1 ring-white/10">
+        <div className="relative h-10 w-4 overflow-hidden rounded-full bg-white/8 ring-1 ring-white/10 sm:h-14">
           <div
             className="absolute left-1/2 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-emerald-200/80 shadow-[0_0_18px_rgba(52,211,153,0.45)]"
             style={{ top: "36%" }}

@@ -6,7 +6,7 @@ type Props = { t: (k: string) => string };
 
 export const PhoneTimerCard = ({ t }: Props) => {
   return (
-    <div className="mt-5 rounded-3xl border border-white/10 bg-white/6 p-4 backdrop-blur-xl">
+    <div className="mt-3 rounded-3xl border border-white/10 bg-white/6 p-3 backdrop-blur-xl sm:mt-5 sm:p-4">
       <div className="flex items-center justify-between">
         <div>
           <div className="text-[12px] text-white/60">

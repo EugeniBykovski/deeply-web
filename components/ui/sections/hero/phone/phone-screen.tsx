@@ -26,7 +26,7 @@ export const PhoneScreen = ({ t }: Props) => {
             "radial-gradient(520px 320px at 20% 20%, rgba(23,58,53,0.70), transparent 60%), radial-gradient(520px 360px at 80% 40%, rgba(26,59,66,0.70), transparent 62%)",
         }}
       />
-      <div className="relative z-10 px-5 pt-20">
+      <div className="relative z-10 px-4 pt-12 sm:px-5 sm:pt-20">
         <div className="flex items-center justify-between">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] text-white/75">
             <Waves className="h-3.5 w-3.5 text-emerald-200/90" />

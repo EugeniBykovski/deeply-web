@@ -8,7 +8,7 @@ type Props = {
 
 export const PhoneBottomNav = ({ nav }: Props) => {
   return (
-    <div className="absolute inset-x-0 bottom-16 z-10 px-6">
+    <div className="absolute inset-x-0 bottom-6 z-10 px-6 sm:bottom-16">
       <div className="relative h-12 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl">
         <div className="absolute left-1 top-1 h-10 w-[23%] rounded-xl bg-emerald-400/14 ring-1 ring-emerald-200/10" />
         <div className="relative grid h-full grid-cols-4 place-items-center text-white/60">

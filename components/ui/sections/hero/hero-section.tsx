@@ -21,7 +21,7 @@ export const HeroSection = ({ t }: Props) => {
         />
         <div className="relative grid gap-6 p-6 md:gap-10 md:grid-cols-2 md:p-12">
           <HeroLeft t={t} />
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center overflow-hidden">
             <PhoneMock t={t} />
           </div>
         </div>
