@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { I18nextProvider } from "react-i18next";
 // Import the configured instance (with bundled EN/RU resources) so that
 // translations are available on every route including direct loads of
@@ -12,5 +13,12 @@ interface I18nProviderProps {
 }
 
 export default function I18nProvider({ children }: I18nProviderProps) {
+  useEffect(() => {
+    const saved = localStorage.getItem("appLang");
+    if (saved && saved !== i18n.language) {
+      i18n.changeLanguage(saved);
+    }
+  }, []);
+
   return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;
 }

@@ -19,8 +19,7 @@ i18n.use(initReactI18next).init({
       [Namespaces.landing]: ru,
     },
   },
-  lng:
-    (typeof window !== "undefined" && localStorage.getItem("appLang")) || "ru",
+  lng: "ru",
   fallbackLng: "ru",
   defaultNS: Namespaces.landing,
   ns: Object.values(Namespaces),
